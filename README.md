@@ -3,10 +3,11 @@ Instalation steps:
   - confluent is not supporting to install in windows, so using WSL2 tool installed linux deabin plugin in wsl2.
   - confluent installed and started in wsl2. all required 
   Confluent Image : 
- 
+KafkaHandler\src\main\resources\helpimgs\Confluent and Tomcat install.png 
 
  
  - Created kafka topic in confluent and added avro schemas to that.
+ KafkaHandler\src\main\resources\helpimgs\Topics created in confluent.png
  
 - Sent a test message to topic using .sh script in wsl2.
 Spring Boot App : Kafka Handler
@@ -16,11 +17,12 @@ Spring Boot App : Kafka Handler
 - Implemented a rest service to produce messages to Customer and Balance topics.
  - Added listeners to Customer and Balance topics in java and consumed messages from topics and combined into Customer Balance object and published to Customer Balance Topic.
 Image : springboot app.
- 
+ KafkaHandler\src\main\resources\helpimgs\Springboot Producer consumer App.png
    
 
 Testing: 
 -  Sent a message to published endpoint with customer topic. 
+KafkaHandler\src\main\resources\helpimgs\Produce a Message.png
 
   Issue: Java windows app is unable to connect to wsl2 confluent server.
 it is having a network issue to establish connection.
@@ -28,3 +30,5 @@ Sol : Install tomcat app in WSL2 and generated a war file of Spring boot app and
 -Now trying started tomcat, it raised a java heap memory issue. Increased a java heap memory . 
 - Published a message to producer service, but it is not working and confluent was shut downing with memory issues.
     
+KafkaHandler\src\main\resources\helpimgs\tomcat.png
+KafkaHandler\src\main\resources\Confluent and Tomcat install.png
