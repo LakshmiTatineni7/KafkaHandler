@@ -7,7 +7,7 @@ KafkaHandler\src\main\resources\helpimgs\Confluent and Tomcat install.png
 
  
  - Created kafka topic in confluent and added avro schemas to that.
- KafkaHandler\src\main\resources\helpimgs\Topics created in confluent.png
+KafkaHandler\src\main\resources\helpimgs\Topics created in confluent.png
  
 - Sent a test message to topic using .sh script in wsl2.
 Spring Boot App : Kafka Handler
@@ -17,8 +17,12 @@ Spring Boot App : Kafka Handler
 - Implemented a rest service to produce messages to Customer and Balance topics.
  - Added listeners to Customer and Balance topics in java and consumed messages from topics and combined into Customer Balance object and published to Customer Balance Topic.
 Image : springboot app.
- KafkaHandler\src\main\resources\helpimgs\Springboot Producer consumer App.png
+
+KafkaHandler\src\main\resources\helpimgs\Springboot Producer consumer App.png
    
+Install Java app : 
+gradlew build  
+deploy the war into tomcat server.
 
 Testing: 
 -  Sent a message to published endpoint with customer topic. 
